@@ -142,8 +142,12 @@ button {
 input, textarea {
   display: block;
   width: 100%;
-  background: none;
+  background: #606c88;
   font: inherit;
+}
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  color: azure;
 }
 
 ::selection {
@@ -155,7 +159,7 @@ input, textarea {
 
 html { font-family: var(--ff-poppins); }
 
-body { background: var(--smoky-black); }
+body { background: #BBD2C5; }
 
 
 
@@ -167,12 +171,20 @@ body { background: var(--smoky-black); }
 
 .sidebar,
 article {
-  background: var(--eerie-black-2);
+  /* background-color: linear-gradient(#1D2B64, #F8CDDA); */
   border: 1px solid var(--jet);
   border-radius: 20px;
   padding: 15px;
   box-shadow: var(--shadow-1);
   z-index: 1;
+}
+
+.sidebar {
+  background-color:#2c3e50 ;
+}
+
+article {
+  background-color: #2c3e50;
 }
 
 .separator {
@@ -184,7 +196,7 @@ article {
 
 .icon-box {
   position: relative;
-  background: var(--border-gradient-onyx);
+  /* background: var(--border-gradient-onyx); */
   width: 30px;
   height: 30px;
   border-radius: 8px;
@@ -201,7 +213,7 @@ article {
   content: "";
   position: absolute;
   inset: 1px;
-  background: var(--eerie-black-1);
+  background: #606c88; /* icon background color */
   border-radius: inherit;
   z-index: -1;
 }
@@ -287,7 +299,7 @@ article.active {
   content: "";
   position: absolute;
   inset: 1px;
-  background: var(--bg-gradient-jet);
+  background: #606c88; /* background color */
   border-radius: inherit;
   z-index: -1;
 }
@@ -346,7 +358,7 @@ main {
 
 .info-content .title {
   color: var(--white-1);
-  background: var(--onyx);
+  background: #606c88; /* background color */
   font-size: var(--fs-8);
   font-weight: var(--fw-300);
   width: max-content;
@@ -459,7 +471,7 @@ main {
   bottom: 0;
   left: 0;
   width: 100%;
-  background: hsla(240, 1%, 17%, 0.75);
+  background: #606c88; /* Navbar background color */
   backdrop-filter: blur(10px);
   border: 1px solid var(--jet);
   border-radius: 12px 12px 0 0;
@@ -535,7 +547,7 @@ main {
   content: "";
   position: absolute;
   inset: 1px;
-  background: var(--bg-gradient-jet);
+  background: #606c88;  /* item background color */
   border-radius: inherit;
   z-index: -1;
 }
@@ -1153,7 +1165,7 @@ main {
 }
 
 .form-input {
-  color: var(--white-2);
+color: azure;
   font-size: var(--fs-6);
   font-weight: var(--fw-400);
   padding: 13px 20px;
@@ -1182,7 +1194,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   position: relative;
   width: 100%;
   background: var(--border-gradient-onyx);
-  color: var(--orange-yellow-crayola);
+  color: white;
   display: flex;
   justify-content: center;
   align-items: center;
